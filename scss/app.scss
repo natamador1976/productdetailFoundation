@@ -1,0 +1,145 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+// Global styles
+@include foundation-global-styles;
+@include foundation-forms;
+@include foundation-typography;
+
+// Grids (choose one)
+@include foundation-xy-grid-classes;
+// @include foundation-grid;
+// @include foundation-flex-grid;
+
+// Generic components
+@include foundation-button;
+@include foundation-button-group;
+@include foundation-close-button;
+@include foundation-label;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-switch;
+@include foundation-table;
+// Basic components
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-dropdown;
+@include foundation-pagination;
+@include foundation-tooltip;
+
+// Containers
+@include foundation-accordion;
+@include foundation-media-object;
+@include foundation-orbit;
+@include foundation-responsive-embed;
+@include foundation-tabs;
+@include foundation-thumbnail;
+// Menu-based containers
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-accordion-menu;
+@include foundation-drilldown-menu;
+@include foundation-dropdown-menu;
+
+// Layout components
+@include foundation-off-canvas;
+@include foundation-reveal;
+@include foundation-sticky;
+@include foundation-title-bar;
+@include foundation-top-bar;
+
+// Helpers
+@include foundation-float-classes;
+@include foundation-flex-classes;
+@include foundation-visibility-classes;
+// @include foundation-prototype-classes;
+
+// Motion UI
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+//Created by me
+.top-bar{
+    background-color: #ff5e78;
+}
+ul li a{
+    background-color: #ff5e78;
+}
+
+
+.menu-text{
+    font-size: 30px;
+    font-family: 'Lobster Two', cursive;
+
+}
+.background{
+    background-image: url("../img/background.jpg");
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background a {
+    background-color: #f9f871;
+    height: 25px;
+    width: 100px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px #000;
+    color: #000;
+   
+}
+.quote{
+    border-bottom:3px #ccc dotted;
+    border-top:3px #ccc dotted;
+}
+.quote h3{
+    font-size: 100px;
+    font-family: 'Lobster Two', cursive;
+}
+.colecciones {
+    margin-top: 30px;
+}
+.colecciones img {
+    height: 300px;
+}
+.colecciones a{
+    background-color: #ff5e78;
+}
+.colecciones .card-shadow{
+    box-shadow: 0px 0px 5px #444;
+    margin-bottom: 20px;
+}
+.colecciones .card-divider{
+    background-color: #fff;
+}
+.colecciones a:hover{
+    background-color:#f9f871;
+   color: #000;
+}
+.trending{
+    margin-top: 20px;
+}
+.orbit{
+    margin-top: 20px;
+}
+.orbit img{
+    height: 800px;
+}
+footer{
+    background-color: #000;
+    color: #ccc;
+    
+}
+footer h4{
+    font-size: 15px;
+}
